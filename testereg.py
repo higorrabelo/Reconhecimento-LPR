@@ -31,7 +31,7 @@ def binarizar(imagem):
     return binaryPic
 
 def pegaPlaca():
-    cap = cv2.VideoCapture(url)
+    cap = cv2.VideoCapture(0)
     config = '--psm 11' 
     ret, frame = cap.read()
     cv2.imwrite('captura.png', frame)

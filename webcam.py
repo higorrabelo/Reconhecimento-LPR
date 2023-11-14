@@ -2,7 +2,7 @@ import cv2
 
 
 url = 'http://admin:root@1234@10.0.0.47:88/cgi-bin/guest/Video.cgi?media=JPEG'
-cap = cv2.VideoCapture(url)
+cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
     cv2.imshow('Webcam', frame)
